@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>基礎字造句大賽</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="title">
+                <h1>基礎字造句大賽</h1>
+                <p>拖曳文字方塊創建句子</p>
+            </div>
+
+            <div id="controls">
+                <button id="reset-btn">重置</button>
+                <button id="gravity-toggle">開啟重力</button>
+                <button id="add-word">添加文字</button>
+            </div>
+
+            <div id="word-palette">
+                <!-- Chinese words will be added here -->
+            </div>
+
+            <div id="trash-can">
+                <div id="trash-icon">🗑️</div>
+                <div id="trash-label">拖拽删除</div>
+            </div>
+
+            <div id="playground">
+                <!-- This is where users will drag words to create sentences -->
+                <div id="sentence-area">
+                    <h3>當前句子</h3>
+                    <div id="sentence-display"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Physics engine -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+        <!-- Three.js for 3D effects -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
